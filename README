@@ -9,7 +9,7 @@ Introduction :
 
 	Ce fichier contient les coordonnées GPS (N lat, E long) des caméras
 de surveillance de  la ville de Montpellier (Hérault, Languedoc Roussillon).
-L'objectif est d'avoir une base de donnée au format texte exploitable par n'
+L'objectif est d'avoir une base de données au format texte exploitable par n'
 importe quelle application.
 
 Mise à jour :
@@ -22,7 +22,7 @@ Mise à jour :
  
 http://opendata.montpelliernumerique.fr/Emplacement-des-cameras-de
 
-	Auteur	: Ville de Montpellier /Direction des Systèmes d’information
+	Auteur	: Ville de Montpellier/Direction des Systèmes d’information
 	Licence Creative Commons - Paternité - Pas d’Utilisation Commerciale
 	http://opendata.montpelliernumerique.fr/Mentions-legales#licence
 
@@ -34,3 +34,18 @@ du projets "montpellier-cctv-gps-database".
 
 	Licence Creative Commons - Paternité - Pas d’Utilisation Commerciale
 	https://raw.github.com/kbour23/montpellier-cctv-gps-database/master/LICENSE
+
+Format de la base de données:
+-----------------------------
+
+	La base de données est disponible au format CSV (fichier texte) avec 
+les valeurs séparées par le caractère ";". Les colonnes sont les suivantes:
+
+ID;Ref;Lieu;Situation;Quartier;Sous Quartier;GPS N lat;GPS E long;SourceID:		Identifiant unique de la base de données (nombre entier).
+Ref:		Référence interne.
+Lieu:		Adresse ou nom de la rue.
+Quartier: 	Quartier au sens administratif.
+Sous quartier:	Sous quartier au sens administratif.
+GPS N lat:	Latitude.
+GPS E long:	Longitude.
+Source:		Source ayant inventorié la caméra (Officiel ou Community).
